@@ -1,5 +1,5 @@
 # ANLI Round 2 – Natural Language Inference (NLI) Project
-End-to-End ML + Transformer Fine-Tuning + Docker Deployment
+End-to-End ML + Transformer Fine-Tuning + Docker Deployment 
 
 Comprehensive exploration and production-ready implementation of Natural Language Inference models on the Adversarial NLI (ANLI) Round 2 dataset — covering everything from EDA → ML Baselines → Transformer Fine-Tuning → Deployment with Docker.
 
