@@ -1,13 +1,13 @@
-ANLI R2 – Natural Language Inference (3-Way Classification)
-End-to-End Machine Learning Pipeline
+Project Overview
+Task: Natural Language Inference (NLI)
+Dataset: Adversarial NLI (ANLI) Round 2
+Dataset Size: 45,548 train / 1,000 dev / 1,000 test
+Goal: Classify premise-hypothesis relationships as:
 
-This project solves a 3-class NLI task using the ANLI R2 dataset:
+Entailment
+Neutral
+Contradiction
 
-entailment
-
-neutral
-
-contradiction
 
 The pipeline includes:
 
