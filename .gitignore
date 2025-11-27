@@ -1,0 +1,43 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.joblib
+
+# --- Notebooks cache ---
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+venv/
+env/
+anli_env/
+*.env
+
+# --- Model weights (DO NOT UPLOAD) ---
+models/roberta_anli_r2/
+*.bin
+*.safetensors
+*.pt
+
+# --- Large / temp files ---
+*.zip
+*.tar.gz
+*.tar
+*.log
+
+# --- OS / Editor ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Docker ---
+*.sock
+
+# --- Build artifacts ---
+dist/
+build/
+
+# --- Temporary files ---
+*~

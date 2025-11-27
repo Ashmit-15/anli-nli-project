@@ -1,0 +1,10 @@
+notebooks/
+*.zip
+__pycache__/
+*.ipynb_checkpoints
+.DS_Store
+anli_env/
+venv/
+env/
+.git/
+.gitignore
