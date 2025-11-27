@@ -80,41 +80,49 @@ ANLI is **intentionally adversarial** and significantly harder than SNLI/MNLI, m
 ├── README.md
 └── .dockerignore
 
+```
 
+## 🚀 Two Ways to Use This Project
 
+---
 
-🚀 Two Ways to Use This Project
-1️⃣ Jupyter Notebooks (Exploration)
+### 1️⃣ Jupyter Notebooks (Exploration)
 
 Best for experimentation and understanding the pipeline.
 
-Includes:
+**Includes:**
 
-notebooks/eda.ipynb → label distribution, text length, examples
+- `notebooks/eda.ipynb` → label distribution, text length, examples  
+- `notebooks/baseline_ml.ipynb` → TF-IDF + Logistic/SVM/XGBoost  
+- `notebooks/RoBerta.ipynb` → full DistilRoBERTa fine-tuning  
 
-notebooks/baseline_ml.ipynb → TF-IDF + Logistic/SVM/XGBoost
+Perfect for learning and showcasing methodology.
 
-notebooks/RoBerta.ipynb → full DistilRoBERTa fine-tuning
+---
 
-Great for learning and showcasing methodology.
-
-2️⃣ Production Pipeline (Scripts + Automation)
+### 2️⃣ Production Pipeline (Scripts + Automation)
 
 Everything modular, script-based, and deployable.
 
-Run classical ML baselines:
+**Run classical ML baselines:**
+
+```bash
 python run_pipeline.py --mode eval_baseline
+```
 
 Run transformer inference:
+```
 python run_pipeline.py --mode demo \
     --premise "A man is playing music" \
     --hypothesis "A man is playing guitar"
-
+```
 Train models manually:
+```
 python scripts/train_baseline.py
 python scripts/train_transformer.py
+```
 
-📦 Docker Deployment (Inference-Ready Container)
+#📦 Docker Deployment (Inference-Ready Container)
 
 This project includes a Dockerfile that packages:
 
@@ -125,17 +133,20 @@ All dependencies
 Model loading
 
 A default demo prediction
-
 Build the image:
+```
 docker build -t anli-nli .
+```
 
 Run inference:
+```
 docker run --rm anli-nli
-
+```
 Example CMD in Dockerfile:
+```
 CMD ["python", "run_pipeline.py", "--mode", "demo",
      "--premise", "A man is playing music",
      "--hypothesis", "A man is playing guitar"]
+```
 
 
-Even if the interviewer doesn’t run Docker, including it demonstrates deployment capability.
