@@ -31,7 +31,7 @@ ANLI is **intentionally adversarial** and significantly harder than SNLI/MNLI, m
 
 | Model                         | Accuracy | Macro F1 | Notes                          |
 |------------------------------|----------|----------|--------------------------------|
-| **DistilRoBERTa (fine-tuned)** | XX%      | XX       | Best model; fine-tuned for NLI |
+| **DistilRoBERTa (fine-tuned)** | 45%      | 0.44       | Best model; fine-tuned for NLI |
 | XGBoost                       | ~38%     | ~0.33    | Strongest ML baseline          |
 | Linear SVM                    | ~36%     | ~0.33    | Good baseline                  |
 | Logistic Regression           | ~35%     | ~0.33    | Baseline                       |
